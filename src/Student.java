@@ -1,10 +1,12 @@
 public class Student {
-    public Student(String name){       //constructor for Student- java creates a default constructor even in the absence of you making one. We use them to pass arguments
-        this.name = name;
-    }
     private String name;
+    private String id;
+    public Student(String name, String id){       //constructor for Student- java creates a default constructor even in the absence of you making one. We use them to pass arguments
+        this.name = name;
+        this.id = id;
+    }
     public String getName(){
-        return name;
+        return "Student ID: " + id + "\nName: " + name;
     }
 
     // by default, java adds this. to the front of any variable
