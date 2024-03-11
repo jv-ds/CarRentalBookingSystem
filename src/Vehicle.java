@@ -3,6 +3,7 @@ public class Vehicle {
     private int year;
     private double price;
 
+    // Constructor for vehicle
     public Vehicle(String brand, int year, double price){
         this.brand = brand;
         this.year = year;

@@ -2,7 +2,7 @@ public class BookingSystem {
     private Vehicle[] vehicles;
 
     public BookingSystem(int size){
-        vehicles = new Vehicle[6];
+        vehicles = new Vehicle[6];          //creates array of size 6 for vehicles
     }
 
     public void createVehicles(){
@@ -16,13 +16,15 @@ public class BookingSystem {
 
     public void displayVehicles(){
         for(int i = 0; i < vehicles.length; i++){
-            System.out.printf("\nBooking Item (%s)\n",i+1);
+            System.out.printf("\nBooking Item (%s)\n",i+1);     //displays booking item number based on vehicle in array
             System.out.println(vehicles[i].toString());
         }
     }
 
     public void printStatus() {
+        System.out.println("Welcome to FIT2099 Booking System");
         displayVehicles();
+        System.out.println("\n\nThank you for visiting FIT2099 Booking System!\n");
     }
 
 
