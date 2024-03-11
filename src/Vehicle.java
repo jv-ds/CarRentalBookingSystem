@@ -11,10 +11,9 @@ public class Vehicle {
 
     @Override
     public String toString() {
-        return "Vehicle{" +
-                "brand='" + brand + '\'' +
-                ", year='" + year + '\'' +
-                ", price='" + price + '\'' +
-                '}';
+        return  "\nBrand: " + brand +
+                "\nYear: " + year +
+                "\nPrice: " + String.format("%.2f", price) + " per day"
+                ;
     }
 }
