@@ -2,7 +2,7 @@ public class BookingSystem {
     private Vehicle[] vehicles;
 
     public BookingSystem(int size){
-        vehicles = new Vehicle[6];          //creates array of size 6 for vehicles
+        vehicles = new Vehicle[size];          //creates array of size 6 for vehicles
     }
 
     public void createVehicles(){
