@@ -8,7 +8,7 @@ public class Action {
         return null;
     }
 
-    private String menuDescription(){           //double check type of method!
+    public String menuDescription(){           //double check type of method!
         return null;
     }
 

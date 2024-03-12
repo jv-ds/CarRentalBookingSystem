@@ -1,9 +1,12 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 public class BookingSystem {
     private Vehicle[] vehicles;
-    private Booking booking;
+    ArrayList<Booking> bookings;
 
     public BookingSystem(int size){
         vehicles = new Vehicle[size];          //creates array of size 6 for vehicles
+        bookings = new ArrayList<>();
     }
 
     public void createVehicles(){
@@ -29,7 +32,7 @@ public class BookingSystem {
     }
 
     public void addBookings(Booking booking) {
-        this.booking = booking;
+        bookings.add(booking);
     }
 
 
