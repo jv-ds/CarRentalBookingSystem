@@ -1,5 +1,6 @@
 public class BookingSystem {
     private Vehicle[] vehicles;
+    private Booking booking;
 
     public BookingSystem(int size){
         vehicles = new Vehicle[size];          //creates array of size 6 for vehicles
@@ -25,6 +26,10 @@ public class BookingSystem {
         System.out.println("Welcome to FIT2099 Booking System");
         displayVehicles();
         System.out.println("\n\nThank you for visiting FIT2099 Booking System!\n");
+    }
+
+    public void addBookings(Booking booking) {
+        this.booking = booking;
     }
 
 
