@@ -1,8 +1,9 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.List;
+
 public class BookingSystem {
     private Vehicle[] vehicles;
-    ArrayList<Booking> bookings;
+    private ArrayList<Booking> bookings;
 
     public BookingSystem(int size){
         vehicles = new Vehicle[size];          //creates array of size 6 for vehicles
@@ -27,14 +28,33 @@ public class BookingSystem {
 
     public void printStatus() {
         System.out.println("Welcome to FIT2099 Booking System");
-        displayVehicles();
-        System.out.println("\n\nThank you for visiting FIT2099 Booking System!\n");
+        createVehicles();
+        addBookingForVehicle();
+        System.out.println("Thank you for visiting FIT2099 Booking System!");
+        //System.out.println("\n\nThank you for visiting FIT2099 Booking System!\n");
     }
 
     public void addBookings(Booking booking) {
         bookings.add(booking);
     }
 
+    public void addBookingForVehicle() {
+        while(true){
+            List<Action> actions = new ArrayList<>();
+            //TODO: create add booking actions by looping through all available vehicles here, see hint message above.
+            for(Vehicle loopvehicle: vehicles){
+                Booking currBooking = new Booking(loopvehicle);
+                AddBookingAction curraddBookingAction = new AddBookingAction(currBooking);
+                //addBookings(currBooking);
+                actions.add(curraddBookingAction);
+            }
+
+            System.out.println("#########################################");
+            Action curraction = Menu.showMenu(actions);
+            System.out.println(curraction.execute(this));
+            break;
+        }
+    }
 
 
 }

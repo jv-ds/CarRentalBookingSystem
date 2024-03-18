@@ -3,7 +3,6 @@ public class Booking {
     public Booking(Vehicle vehicle){
         this.bookingVehicle = vehicle;
     }
-
     @Override
     public String toString(){
         return super.toString();
