@@ -1,15 +1,14 @@
-import java.util.ArrayList;
-import java.util.List;
 public class AddBookingAction extends Action{
     private Booking myBooking;
+    private User myUser;
 
     public AddBookingAction(Booking myBooking){
         this.myBooking = myBooking;
     }
 
     @Override
-    public String execute(BookingSystem bookingSystem) {
-        bookingSystem.addBookings(myBooking);
+    public String execute(User myUser) {
+        myUser.addBookings(myBooking);
         return myBooking + " is successfully added to the Booking System!";
     }
 
