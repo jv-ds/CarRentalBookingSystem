@@ -1,14 +1,6 @@
 import java.util.ArrayList;
-public abstract class Action {
+public interface Action {
+    String execute(User user, BookingSystem bookingSystem);
 
-    public String execute(BookingSystem bookingSystem){         //double check type of method!
-        return "Test1";
-    }
-
-    public abstract String execute(User myUser);
-
-    public String menuDescription(){           //double check type of method!
-        return "Test2";
-    }
-
+    String menuDescription();
 }

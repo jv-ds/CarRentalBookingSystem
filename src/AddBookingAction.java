@@ -1,4 +1,4 @@
-public class AddBookingAction extends Action{
+public class AddBookingAction{
     private Booking myBooking;
     private User myUser;
 
@@ -6,7 +6,6 @@ public class AddBookingAction extends Action{
         this.myBooking = myBooking;
     }
 
-    @Override
     public String execute(User myUser) {
         myUser.addBookings(myBooking);
         return myBooking + " is successfully added to the Booking System!";
