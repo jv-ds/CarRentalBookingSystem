@@ -40,7 +40,7 @@ public class BookingSystem {
             //TODO: create add booking actions by looping through all available vehicles here, see hint message above.
             for(Vehicle loopvehicle: vehicles){
                 Booking currBooking = new Booking(loopvehicle);
-                AddBookingAction curraddBookingAction = new AddBookingAction(currBooking);
+                AddBookingAction curraddBookingAction = new AddBookingAction(currBooking); //we want to be generated from vehicle
                 //addBookings(currBooking);
                 actions.add(curraddBookingAction);
             }
