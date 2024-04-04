@@ -6,7 +6,7 @@ public class Action {
     }
 
     public String menuDescription(){           //double check type of method!
-        return "GRAHHHH";
+       return "";
     }
 
 }
