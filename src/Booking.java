@@ -5,6 +5,6 @@ public class Booking {
     }
     @Override
     public String toString(){
-        return super.toString();
+        return bookingVehicle.toString();
     }
 }
